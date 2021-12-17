@@ -6,7 +6,15 @@ const { Workout } = require("../models");
 
 // GET Request for getting all workouts
 router.get("/api/workouts", (req, res) => {
-  Workout.find()
+  Workout.aggregate([
+    {
+      $addFields:{
+        totalDuration:{
+          $sum:"$exercises.duration"
+        }
+      }
+    }
+  ])
     .then((dbData) => {
       res.json(dbData);
     })
@@ -17,7 +25,19 @@ router.get("/api/workouts", (req, res) => {
 
 // GET request
 router.get("/api/workouts/range", (req, res) => {
-  Workout.find()
+  Workout.aggregate([
+    {
+      $addFields: {
+        totalDuration:{
+          $sum:"$exercises.duration"
+        }
+      }
+    }
+  ])
+  .sort({
+    _id: -1
+  })
+  .limit(7)
     .then((dbData) => {
       res.json(dbData);
     })
