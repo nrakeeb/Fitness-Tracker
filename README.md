@@ -49,7 +49,7 @@
   ## Questions:
 
   - Github: 
-  Find me on GitHub:[nrakeeb] (https://github.com/nrakeeb)
+  Find me on GitHub:[nrakeeb](https://github.com/nrakeeb)
   <br>
   - Email: 
   Email me on: nouha_rakeeb@hotmail.co.uk 
