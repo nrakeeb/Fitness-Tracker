@@ -37,6 +37,9 @@
 
   ## Screenshots:
   
+  ![Capture A](https://user-images.githubusercontent.com/82734765/146630805-6d697749-28f9-4735-ad79-f1f07710a4a1.PNG)
+  
+  ![Capture B](https://user-images.githubusercontent.com/82734765/146630810-3b927fe4-d346-486d-84e2-248f55282b32.PNG)
 
 
   ## ✏️ Testing:
